@@ -11,7 +11,7 @@ pipeline {
        }
           stage('Build Package') {
             steps {
-                sh 'mvn clean install'
+                sh 'mvn clean install -f CalTech-PG-DevOps-Final-Capstone-Project/pom.xml'
             }
         }
         stage('Docker build and Tag') {
